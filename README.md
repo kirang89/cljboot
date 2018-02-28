@@ -1,6 +1,6 @@
 ## cljboot
 
-A simple template to manage a project using clojure deps and cli.
+A simple template to manage a project using clojure [deps and cli](https://clojure.org/reference/deps_and_cli).
 
 ## Usage
 
