@@ -14,4 +14,8 @@
   {:main-opts ["-m" "mach.pack.alpha.capsule" "deps.edn" "target/cljboot.jar" "resources"]
    :extra-deps
    {pack/pack.alpha {:git/url "https://github.com/juxt/pack.alpha.git"
-                     :sha     "bb2c5a2c78aca9328e023b029c06ba0efdd1e3b7"}}}}}
+                     :sha     "bb2c5a2c78aca9328e023b029c06ba0efdd1e3b7"}}}
+
+  :nrepl {:extra-deps {org.clojure/tools.nrepl {:mvn/version "0.2.12"}}}
+
+  :cider {:extra-deps {cider/cider-nrepl {:mvn/version "0.15.1"}}}}}

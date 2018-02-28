@@ -36,3 +36,6 @@ uberjar: ##@dev package your app as a jar
 
 run-uberjar: uberjar ##@dev package your app and run it
 	java -jar target/cljboot.jar -m cljboot.core
+
+nrepl:	##@dev run an nrepl server
+	clj -R:nrepl:cider bin/nrepl.clj
