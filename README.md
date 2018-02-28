@@ -2,8 +2,6 @@
 
 A simple template to manage a project using clojure deps and cli.
 
-The `Makefile` contains the commands ava
-
 ## Usage
 
 Run `make help` to see the available commands.
