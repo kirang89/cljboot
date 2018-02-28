@@ -16,6 +16,7 @@ dev:
   clean                          clean project
   uberjar                        package your app as a jar
   run-uberjar                    package your app and run it
+  nrepl                          run an nrepl server
 
 miscellaneous:
   help                           Show this help.
