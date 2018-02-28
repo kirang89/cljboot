@@ -1,0 +1,17 @@
+{:paths ["src"]
+ :deps
+ {org.clojure/clojure {:mvn/version "1.9.0"}}
+
+ :aliases
+ {:test
+  {:extra-paths ["test"]
+   :main-opts ["-m" "cognitect.test-runner"]
+   :extra-deps
+   {com.cognitect/test-runner {:git/url "git@github.com:cognitect-labs/test-runner"
+                               :sha "5f2b5c2efb444df76fb5252102b33f542ebf7f58"}}}
+
+  :uberjar
+  {:main-opts ["-m" "mach.pack.alpha.capsule" "deps.edn" "target/cljboot.jar" "resources"]
+   :extra-deps
+   {pack/pack.alpha {:git/url "https://github.com/juxt/pack.alpha.git"
+                     :sha     "bb2c5a2c78aca9328e023b029c06ba0efdd1e3b7"}}}}}
